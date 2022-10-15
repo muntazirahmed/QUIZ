@@ -1,8 +1,19 @@
-import React from 'react'
+import React from 'react';
+import Messages from './Messages';
 
-const Chat = () => {
+function Chat() {
   return (
-    <div>Chat</div>
+    <div className="chat">
+        <div className="chatinfo">
+            <span>john</span>
+            <div classname="chaticons">
+                <img  src=""alt=""/>
+                <img  src=""alt=""/>
+                <img  src=""alt=""/>
+            </div>
+        </div>
+        <Messages/>
+    </div>
   )
 }
 
