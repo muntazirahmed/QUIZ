@@ -130,9 +130,7 @@ img{
 .userchat:hover{
   background-color:blue
 }
-.userchatinfo{
 
-}
 span{
   font-size:18px;
   color:wheat;
@@ -144,6 +142,78 @@ color:lightcoral;
 }
 .chatinfo{
   height:50px;
-  background-color:rgb(51, 51, 172);
+  background-color:rgb(114, 114, 194);
   display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 10px;
+  color:rgb(125, 176, 125)
+}
+.messages{
+  background-color: rgba(186, 226, 248, 0.687);
+  padding:10px;
+  overflow:scroll;
+  height:calc(100% - 160px);
+}
+.message{
+  display:flex;
+  gap:20px;
+  margin-bottom: 10px;
+}
+.messageinfo{
+      display:flex;
+      flex-direction:column;
+}
+.messagecontent{
+max-width: 80%;
+display: flex;
+flex-direction:column;
+gap:10px;
+}
+.input{
+  height: 50px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background-color:white;
+  padding:10px ;
+  overflow:auto;
+
+}
+input{
+  width: 90%;
+  padding:20px;
+}
+.send{
+  display:flex;
+
+  align-items:center;
+  gap:10px;
+  
+}
+
+.chaticons{
+  display:flex;
+
+  justify-content:space-between;
+  
+
+}
+.chatimg{
+  height:24px;
+  cursor: pointer;
+  gap:10px;
+
+}
+.button{
+  border:none;
+  padding:10px 15px;
+}
+.p{
+  background-color:white;
+  padding:10px 20px;
+  border-radius:0px 10px 10px 10px;
+}
+.message{
+flex-direction: row-reverse;
 }
