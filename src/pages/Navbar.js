@@ -1,9 +1,6 @@
-import React from 'react';
-import {  Link } from 'react-router-dom';
-import Login from './Login'
+import React from 'react'
 
-const Navbar = () => {
-    <link to="/Login"></link>
+function Navbar() {
   return (
     <div>Navbar</div>
   )
