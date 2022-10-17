@@ -20,6 +20,7 @@ body{
 }
 .top{
 height:50%;
+position:relative;
 }
 .timer{
   width:70px;
@@ -29,10 +30,62 @@ height:50%;
   display: flex;
   align-items: center;
   justify-content: center;
+font-size:35px;
+font-weight:bold;
+position: absolute;
+bottom:10px;
+left:80px;
+
 
 }
 .bottom{
  height:50%; 
+}
+.trivia{
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-around;
+}
+.question{
+  width:80%;
+  background:linear-gradient(#311692,black);
+  border: 2px solid white;
+  text-align: center;
+  padding:20px;
+  border-radius:10px;
+  font-size: 20px;
+
+
+
+}
+.answers{
+  width:100%;
+  display: flex;
+  justify-content:center;
+  flex-wrap:wrap; 
+
+}
+.answer{
+  width:40%;
+  padding: 10px;
+  text-align: center;
+  background:linear-gradient(#01053a,rgb(37, 118, 44));
+  border: 2px solid white;
+  border-radius:20px;
+  font-size: 20px;
+  font-weight: 300;
+  margin:0 10px 20px 10px;
+  cursor: pointer;
+
+}
+.answer:hover,
+.answer.active{
+  background:blue
+}
+.answer.correct{
+  animation:correct 3s ease forwards;
 }
 .pyramid{
   width:25%;
