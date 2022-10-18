@@ -87,6 +87,21 @@ left:80px;
 .answer.correct{
   animation:correct 3s ease forwards;
 }
+@keyframes correct{
+  0%, 22%,42% {background:blue;}
+  20%,40%,60%{ background:linear-gradient(#474d9e,rgb(13, 3, 67));}
+  62%,100%{ background:rgb(45, 250, 4)}
+}
+
+.answer.wrong{
+  animation:wrong 3s ease forwards;
+}
+@keyframes wrong{
+  0%, 22%,42% {background:blue;}
+  20%,40%,60%{ background:linear-gradient(#474d9e,rgb(13, 3, 67));}
+  62%,100%{ background:rgb(250, 4, 4)}
+}
+
 .pyramid{
   width:25%;
   background-color:rgba(31, 13, 89, 0.999);
@@ -121,4 +136,12 @@ left:80px;
   font-size: 20px;
   font-weight:300;
 
+}
+.endtext{
+  position:relative;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin :  auto;
 }
